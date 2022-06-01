@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="RestFulBooker_API_Testing_Automation">
+	<listeners>
+		<listener
+			class-name="com.enhops.restful.apitest.listeners.TestStatusListener" />
+		<listener
+			class-name="com.enhops.restful.apitest.listeners.AnnotationTransformer" />
+	</listeners>
+	<test name="LoginTest">
+		<groups>
+			<include name="smoke" />
+		</groups>
+		<packages>
+			<package name="com.enhops.restful.apitest.testcases.*" />
+		</packages>
+	</test>
+</suite>
