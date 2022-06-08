@@ -1,17 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
 <suite name="RestFulBooker_API_Testing_Automation">
-	<listeners>
-		<listener
-			class-name="com.enhops.restful.apitest.listeners.TestStatusListener" />
-		<listener
-			class-name="com.enhops.restful.apitest.listeners.AnnotationTransformer" />
-	</listeners>
-	<test name="LoginTest">
-		<groups>
-			<include name="smoke" />
-		</groups>
+	<test name="APITEST">
 		<packages>
-			<package name="com.enhops.restful.apitest.testcases.*" />
+			<package name="com.protean.rest.apitest.runner.*" />
 		</packages>
 	</test>
 </suite>
